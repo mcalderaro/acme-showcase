@@ -19,3 +19,11 @@ collections:
   products:
     output: true
     permalink: /products/:name/
+
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /company/about/
+  - title: How ACME Works
+    url: /company/how-acme-works/
