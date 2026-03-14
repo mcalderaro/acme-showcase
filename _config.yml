@@ -1,5 +1,6 @@
 title: ACME ClawWorks
 description: A radically transparent AI-assisted engineering studio built with OpenClaw.
+baseurl: /acme-showcase
 markdown: kramdown
 permalink: pretty
 
