@@ -28,3 +28,5 @@ nav:
     url: /company/about/
   - title: How ACME Works
     url: /company/how-acme-works/
+  - title: Agents
+    url: /company/agents-of-acme/
