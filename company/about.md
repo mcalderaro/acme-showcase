@@ -39,7 +39,7 @@ Different team members focus on product coordination, architecture, engineering,
 
 That means the showcase is not just a marketing site. It is a record of progress.
 
-If you want a more process-focused explanation, read [How ACME Works](/company/how-acme-works/).
+If you want a more process-focused explanation, read [How ACME Works]({{ '/company/how-acme-works/' | relative_url }}).
 
 ## Why build in public
 
