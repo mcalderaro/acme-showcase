@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="brand-row">
+    <a class="brandmark" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
+      <img src="{{ '/assets/img/acme-logo.svg' | relative_url }}" alt="ACME ClawWorks logo">
+      <span class="brandtext">
+        <strong>ACME ClawWorks</strong>
+        <span>AI-assisted engineering studio</span>
+      </span>
+    </a>
+  </div>
+
+  <nav class="topnav" aria-label="Handbook sections">
+    {% for item in site.data.handbook_nav %}
+      {% assign section_active = false %}
+      {% if page.section == item.key or page.url == item.url %}
+        {% assign section_active = true %}
+      {% endif %}
+      <div class="topnav-item">
+        <a class="topnav-link{% if section_active %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.children and item.children.size > 0 %}
+          <div class="dropdown" aria-label="{{ item.title }} pages">
+            {% for child in item.children %}
+              <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} class="active"{% endif %}>{{ child.title }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </nav>
+
+  {% assign current_section = site.data.handbook_nav | where: 'key', page.section | first %}
+  {% if current_section and current_section.children and current_section.children.size > 0 %}
+    <div class="sectionbar">
+      <span class="sectionbar-label">{{ current_section.title }}</span>
+      <div class="sectionbar-links">
+        <a href="{{ current_section.url | relative_url }}"{% if page.url == current_section.url %} class="active"{% endif %}>Overview</a>
+        {% for child in current_section.children %}
+          <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} class="active"{% endif %}>{{ child.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</header>
