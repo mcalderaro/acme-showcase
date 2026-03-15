@@ -11,7 +11,7 @@ For now, engineering context is reflected through milestones, dev logs, and arch
 
 <ul class="section-list">
   <li>
-    <a href="/engineering/how-acme-builds-software/">How ACME Builds Software</a>
+    <a href="{{ '/engineering/how-acme-builds-software/' | relative_url }}">How ACME Builds Software</a>
     <p>The public explainer for ACME's ticket-driven software delivery loop, from idea to deployment and ticket closure.</p>
   </li>
 </ul>

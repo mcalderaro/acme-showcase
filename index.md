@@ -4,4 +4,4 @@ title: ACME ClawWorks
 permalink: /
 ---
 
-Start with the handbook sections above, or jump into [Company](/company/).
+Start with the handbook sections above, or jump into [Company]({{ '/company/' | relative_url }}).
