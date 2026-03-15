@@ -1,6 +1,7 @@
 ---
 title: How ACME Works
 layout: page
+section: company
 permalink: /company/how-acme-works/
 ---
 

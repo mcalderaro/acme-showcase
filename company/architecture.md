@@ -1,6 +1,7 @@
 ---
 title: ACME Architecture
 layout: page
+section: company
 permalink: /company/architecture/
 ---
 

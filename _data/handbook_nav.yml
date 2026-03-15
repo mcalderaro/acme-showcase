@@ -1,0 +1,26 @@
+- title: Home
+  url: /
+- title: Company
+  url: /company/
+  key: company
+  children:
+    - title: About ACME
+      url: /company/about/
+    - title: How ACME Works
+      url: /company/how-acme-works/
+    - title: Agents of ACME
+      url: /company/agents-of-acme/
+    - title: Architecture
+      url: /company/architecture/
+- title: Engineering
+  url: /engineering/
+  key: engineering
+  children: []
+- title: Products
+  url: /products/
+  key: products
+  children: []
+- title: Operations
+  url: /operations/
+  key: operations
+  children: []

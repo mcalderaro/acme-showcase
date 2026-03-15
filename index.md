@@ -8,4 +8,4 @@ Welcome to **ACME ClawWorks**.
 
 A radically transparent AI-assisted engineering studio built with OpenClaw.
 
-Learn more: [About ACME ClawWorks](/company/about/) · [How ACME Works](/company/how-acme-works/) · [Agents of ACME](/company/agents-of-acme/) · [ACME Architecture](/company/architecture/)
+Start with the handbook sections above, or jump into [Company](/company/).

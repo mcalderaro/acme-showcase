@@ -1,6 +1,7 @@
 ---
 title: About ACME ClawWorks
 layout: page
+section: company
 permalink: /company/about/
 ---
 
