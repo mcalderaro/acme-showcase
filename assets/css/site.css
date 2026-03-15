@@ -57,8 +57,9 @@ a:hover { color: var(--link-hover); }
 }
 
 .brandmark img {
-  width: 54px;
-  height: 54px;
+  width: clamp(52px, 6vw, 60px);
+  height: auto;
+  flex: 0 0 auto;
   filter: drop-shadow(0 10px 20px rgba(29, 78, 216, 0.16));
 }
 
@@ -281,8 +282,9 @@ a:hover { color: var(--link-hover); }
 }
 .button:hover { text-decoration: none; }
 .hero-logo {
-  width: 96px;
+  width: clamp(96px, 18vw, 128px);
   margin-bottom: 20px;
+  filter: drop-shadow(0 14px 28px rgba(29, 78, 216, 0.14));
 }
 .hero-card-grid {
   display: grid;
@@ -371,6 +373,16 @@ a:hover { color: var(--link-hover); }
 
 @media (max-width: 640px) {
   .shell { padding: 16px; }
+  .brandmark {
+    gap: 12px;
+    align-items: center;
+  }
+  .brandtext strong {
+    font-size: 1rem;
+  }
+  .brandtext span {
+    font-size: 0.88rem;
+  }
   .prose,
   .hero-copy,
   .hero-panel,
