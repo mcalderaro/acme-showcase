@@ -10,7 +10,7 @@ ACME ClawWorks builds software through a ticket-driven development loop designed
 The goal is not just to move fast. The goal is to make sure every step — from direction to deployment — has a place in the system.
 
 <figure class="diagram">
-  <img src="/assets/img/acme-software-loop.svg" alt="Diagram showing the ACME software loop: Idea, Product direction, Plane ticket, Agent implementation, GitHub pull request, CI/CD validation, Deployment, and Ticket closure.">
+  <img src="{{ '/assets/img/acme-software-loop.svg' | relative_url }}" alt="Diagram showing the ACME software loop: Idea, Product direction, Plane ticket, Agent implementation, GitHub pull request, CI/CD validation, Deployment, and Ticket closure.">
   <figcaption>The ACME software workflow is a loop: each released change traces back to an explicit ticket and closes only after validation and deployment.</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ After the ticket is ready, implementation begins.
 
 The relevant specialist agent takes the work forward within role boundaries. In many cases, that means engineering execution by Ethan Brooks, architecture guidance from Adrian Cole, product clarification from Emma Carter, and operational coordination through Alex Mercer.
 
-The team structure described on [Agents of ACME](/company/agents-of-acme/) matters here because implementation is not treated as a single anonymous blob of work. Different roles contribute different kinds of decisions.
+The team structure described on [Agents of ACME]({{ '/company/agents-of-acme/' | relative_url }}) matters here because implementation is not treated as a single anonymous blob of work. Different roles contribute different kinds of decisions.
 
 ### 5. GitHub pull request
 
@@ -86,7 +86,7 @@ That closing step matters. It connects the tracked work item to a finished opera
 
 Architecture sits upstream of implementation.
 
-Before engineering work becomes a pull request, ACME uses architecture to turn product intent into a technical shape with boundaries, standards, and reusable patterns. That is why the [Architecture](/company/architecture/) page matters: it explains how ACME avoids discovering the system design by accident while coding.
+Before engineering work becomes a pull request, ACME uses architecture to turn product intent into a technical shape with boundaries, standards, and reusable patterns. That is why the [Architecture]({{ '/company/architecture/' | relative_url }}) page matters: it explains how ACME avoids discovering the system design by accident while coding.
 
 ## Why this loop works in public
 
