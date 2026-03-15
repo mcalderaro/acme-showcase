@@ -1,6 +1,7 @@
 ---
 title: Agents of ACME
 layout: page
+section: company
 permalink: /company/agents-of-acme/
 ---
 

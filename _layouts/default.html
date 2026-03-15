@@ -4,49 +4,217 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
+    :root {
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --link: #0969da;
+      --bg-soft: #f6f8fa;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
+      color: var(--text);
       line-height: 1.6;
+      background: white;
     }
 
-    nav {
-      margin-bottom: 30px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
+    a {
+      color: var(--link);
     }
 
-    nav a {
-      margin-right: 20px;
+    .shell {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .topnav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topnav-item {
+      position: relative;
+    }
+
+    .topnav-link {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 10px;
       text-decoration: none;
-      color: #0366d6;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .topnav-link:hover,
+    .topnav-item:hover .topnav-link,
+    .topnav-link.active {
+      background: var(--bg-soft);
+      text-decoration: none;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      min-width: 220px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(31, 35, 40, 0.08);
+      padding: 8px;
+      z-index: 10;
+    }
+
+    .topnav-item:hover .dropdown,
+    .topnav-item:focus-within .dropdown {
+      display: block;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
       font-weight: 500;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .dropdown a:hover,
+    .dropdown a.active {
+      background: var(--bg-soft);
+      text-decoration: none;
+    }
+
+    .sectionbar {
+      margin: -8px 0 24px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg-soft);
+    }
+
+    .sectionbar-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .sectionbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .sectionbar-links a {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: white;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .sectionbar-links a.active {
+      background: #e7f1ff;
+      border-color: #b6d3ff;
     }
 
     .container {
       max-width: 800px;
     }
+
+    .section-list {
+      margin: 1.5rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .section-list li {
+      margin: 0 0 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: white;
+    }
+
+    .section-list a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .section-list p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        padding: 18px;
+      }
+
+      .dropdown {
+        position: static;
+        display: block;
+        min-width: 0;
+        box-shadow: none;
+        margin-top: 6px;
+      }
+    }
   </style>
 </head>
-
 <body>
+  <div class="shell">
+    <nav class="topnav" aria-label="Handbook sections">
+      {% for item in site.data.handbook_nav %}
+        {% assign section_active = false %}
+        {% if page.section == item.key or page.url == item.url %}
+          {% assign section_active = true %}
+        {% endif %}
+        <div class="topnav-item">
+          <a class="topnav-link{% if section_active %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% if item.children and item.children.size > 0 %}
+            <div class="dropdown" aria-label="{{ item.title }} pages">
+              {% for child in item.children %}
+                <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} class="active"{% endif %}>{{ child.title }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </nav>
 
-<nav>
-  {% for item in site.nav %}
-    <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-  {% endfor %}
-</nav>
+    {% assign current_section = site.data.handbook_nav | where: 'key', page.section | first %}
+    {% if current_section and current_section.children and current_section.children.size > 0 %}
+      <div class="sectionbar">
+        <span class="sectionbar-label">{{ current_section.title }}</span>
+        <div class="sectionbar-links">
+          <a href="{{ current_section.url | relative_url }}"{% if page.url == current_section.url %} class="active"{% endif %}>Overview</a>
+          {% for child in current_section.children %}
+            <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} class="active"{% endif %}>{{ child.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
 
-<div class="container">
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-</div>
-
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+  </div>
 </body>
 </html>
