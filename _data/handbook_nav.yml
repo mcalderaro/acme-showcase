@@ -15,7 +15,9 @@
 - title: Engineering
   url: /engineering/
   key: engineering
-  children: []
+  children:
+    - title: How ACME Builds Software
+      url: /engineering/how-acme-builds-software/
 - title: Products
   url: /products/
   key: products

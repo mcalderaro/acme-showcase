@@ -1,0 +1,61 @@
+<svg width="1280" height="520" viewBox="0 0 1280 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="520" rx="28" fill="#F8FBFF"/>
+  <rect x="24" y="24" width="1232" height="472" rx="24" fill="#FFFFFF" stroke="#D5DEEA" stroke-width="2"/>
+  <text x="60" y="82" fill="#132033" font-family="Arial, sans-serif" font-size="34" font-weight="700">How ACME Builds Software</text>
+  <text x="60" y="116" fill="#57657A" font-family="Arial, sans-serif" font-size="20">The ticket-driven development loop from direction to deployment</text>
+
+  <g font-family="Arial, sans-serif">
+    <g>
+      <rect x="60" y="180" width="125" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="102" y="217" font-size="21" font-weight="700" fill="#132033">Idea</text>
+      <text x="84" y="244" font-size="14" fill="#57657A">CTO direction</text>
+    </g>
+    <g>
+      <rect x="210" y="180" width="155" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="232" y="214" font-size="21" font-weight="700" fill="#132033">Product</text>
+      <text x="236" y="241" font-size="21" font-weight="700" fill="#132033">direction</text>
+      <text x="230" y="260" font-size="14" fill="#57657A">scope and intent</text>
+    </g>
+    <g>
+      <rect x="390" y="180" width="155" height="90" rx="18" fill="#EDE9FE" stroke="#D2C4FF"/>
+      <text x="432" y="217" font-size="21" font-weight="700" fill="#132033">Plane</text>
+      <text x="433" y="244" font-size="21" font-weight="700" fill="#132033">ticket</text>
+      <text x="420" y="262" font-size="14" fill="#57657A">tracked work item</text>
+    </g>
+    <g>
+      <rect x="570" y="180" width="180" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="600" y="217" font-size="21" font-weight="700" fill="#132033">Agent</text>
+      <text x="604" y="244" font-size="21" font-weight="700" fill="#132033">implementation</text>
+      <text x="616" y="262" font-size="14" fill="#57657A">build and iterate</text>
+    </g>
+    <g>
+      <rect x="775" y="180" width="170" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="806" y="217" font-size="21" font-weight="700" fill="#132033">GitHub</text>
+      <text x="819" y="244" font-size="21" font-weight="700" fill="#132033">pull request</text>
+      <text x="814" y="262" font-size="14" fill="#57657A">reviewable changes</text>
+    </g>
+    <g>
+      <rect x="970" y="180" width="135" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="1009" y="217" font-size="21" font-weight="700" fill="#132033">CI/CD</text>
+      <text x="989" y="244" font-size="14" fill="#57657A">validation pipeline</text>
+    </g>
+    <g>
+      <rect x="1130" y="180" width="95" height="90" rx="18" fill="#EEF4FF" stroke="#BFD1F3"/>
+      <text x="1144" y="217" font-size="21" font-weight="700" fill="#132033">Deploy</text>
+      <text x="1145" y="244" font-size="14" fill="#57657A">release</text>
+    </g>
+  </g>
+
+  <path d="M185 225H210" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <path d="M365 225H390" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <path d="M545 225H570" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <path d="M750 225H775" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <path d="M945 225H970" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1105 225H1130" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+
+  <path d="M1178 270V330H178V270" stroke="#0F172A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 330V355" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M178 355H390" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M390 355V300" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+  <text x="478" y="348" fill="#132033" font-family="Arial, sans-serif" font-size="20" font-weight="700">Ticket closure after successful deployment and validation</text>
+</svg>
