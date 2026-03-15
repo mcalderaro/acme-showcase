@@ -9,6 +9,12 @@ Architecture at ACME ClawWorks exists to keep speed from turning into chaos.
 
 We build as an AI-assisted engineering studio, which means ideas can move quickly. Architecture is the stage where those ideas are shaped into systems with boundaries, tradeoffs, and intent.
 
+
+<figure class="diagram">
+  <img src="/assets/img/acme-architecture-overview.svg" alt="Diagram showing ACME flow from Product Brief to Architecture to Engineering to QA to Documentation, with the Architecture Office providing standards and patterns.">
+  <figcaption>A lightweight public diagram of how architecture connects product intent to implementation, validation, and documentation.</figcaption>
+</figure>
+
 ## What architecture means at ACME
 
 At ACME, architecture is not decorative documentation and it is not a post hoc explanation after code already exists.

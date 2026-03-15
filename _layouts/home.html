@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <div class="shell">
+    {% include site-nav.html %}
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Public handbook</span>
+          <h1>{{ site.title }}</h1>
+          <p class="hero-lede">A radically transparent AI-assisted engineering studio built with OpenClaw.</p>
+          <p>ACME documents how work moves from direction to architecture, engineering, QA, milestones, and public storytelling.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="{{ '/company/' | relative_url }}">Explore Company</a>
+            <a class="button" href="{{ '/company/how-acme-works/' | relative_url }}">How ACME Works</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <img class="hero-logo" src="{{ '/assets/img/acme-logo.svg' | relative_url }}" alt="ACME ClawWorks logo">
+          <div class="hero-card-grid">
+            <div class="hero-card">
+              <strong>Founder-led</strong>
+              <span>Human direction with visible review points</span>
+            </div>
+            <div class="hero-card">
+              <strong>AI-assisted</strong>
+              <span>Specialist agents operating inside clear role boundaries</span>
+            </div>
+            <div class="hero-card">
+              <strong>Built in public</strong>
+              <span>Milestones, explainers, and company pages published as the story unfolds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-grid">
+        <article class="feature-card">
+          <span class="feature-kicker">Company</span>
+          <h2><a href="{{ '/company/' | relative_url }}">The handbook starts with how ACME works</a></h2>
+          <p>Learn the operating model, the team structure, and the architectural discipline behind the studio.</p>
+        </article>
+        <article class="feature-card feature-card-accent">
+          <span class="feature-kicker">Architecture</span>
+          <h2><a href="{{ '/company/architecture/' | relative_url }}">A design system for the company itself</a></h2>
+          <p>See how ACME treats architecture as a real stage between product intent and implementation.</p>
+        </article>
+      </section>
+
+      <section class="home-links">
+        {{ content }}
+      </section>
+    </main>
+  </div>
+</body>
+</html>
