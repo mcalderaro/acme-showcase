@@ -12,6 +12,28 @@
       url: /company/agents-of-acme/
     - title: Architecture
       url: /company/architecture/
+- title: Organizational Model
+  url: /org-model/
+  key: org-model
+  children:
+    - title: Architecture Overview
+      url: /org-model/architecture-overview/
+    - title: Agent Roles
+      url: /org-model/agent-roles/
+    - title: Development Process
+      url: /org-model/development-process/
+    - title: Infrastructure
+      url: /org-model/infrastructure/
+    - title: Products
+      url: /org-model/products/
+    - title: Repository Structure
+      url: /org-model/repository-structure/
+    - title: System Context
+      url: /org-model/system-context/
+    - title: Ticketing Model
+      url: /org-model/ticketing-model/
+    - title: Workflow
+      url: /org-model/workflow/
 - title: Engineering
   url: /engineering/
   key: engineering
