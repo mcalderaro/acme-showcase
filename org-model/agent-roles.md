@@ -5,68 +5,65 @@ section: org-model
 permalink: /org-model/agent-roles/
 ---
 
-ACME ClawWorks treats agents as role-based operators inside a company model.
+ACME ClawWorks uses role-based specialists rather than a generic pool of interchangeable assistants.
 
-Each agent has a defined scope, a working toolset, and a set of responsibilities. That keeps the system legible and reduces the risk of every agent trying to do everything.
+That role structure makes the company easier to understand, easier to route, and easier to govern.
 
 ## Why role boundaries matter
 
 Clear role boundaries make it easier to:
 
-- route requests correctly
+- route requests to the right owner
 - keep responsibility visible
+- preserve specialist judgment
 - separate coordination from implementation
 - explain how work moves through the company
 
-The result is a team model that looks more like a real operating company than a generic chatbot swarm.
+The result is a team model that behaves more like a real operating company than a chatbot swarm.
 
-## Representative roles
+## Current public role model
 
-### Nora Hale
+### Matt Calderaro — CTO (Human)
 
-Nora handles executive coordination, status communication, summarization, and cross-system follow-through.
+Matt initiates work, sets direction, approves major outcomes, and remains the final human authority in the system.
 
-That includes work like:
+### Alex Mercer — Program Director
 
-- turning requests into organized next steps
-- reporting progress
-- keeping documentation and public updates aligned with actual work
+Alex owns coordination across the company: intake, prioritization, queue movement, milestone flow, and cross-team operational follow-through.
 
-### Alex Mercer
+### Emma Carter — Product Manager
 
-Alex focuses on platform and infrastructure operations.
+Emma turns rough requests into clear product direction, scope, and work that can move into implementation.
 
-That includes work like:
+### Adrian Cole — Principal Software Architect
 
-- service configuration
-- deployment support
-- systems troubleshooting
-- environment maintenance
+Adrian defines technical guardrails, architecture decisions, and reusable patterns that keep the company coherent over time.
 
-### Victor Kane
+### Ethan Brooks — Senior Software Engineer
 
-Victor covers operations management.
+Ethan turns approved plans into working implementation, shared components, and repository changes.
 
-That includes work like:
+### Don White — QA Automation Engineer
 
-- ticket triage
-- queue coordination
-- operational follow-through
-- service and workflow monitoring
+Don focuses on validation, regression confidence, and making sure completed work behaves the way the team says it should.
 
-### Development agents
+### Nora Hale — Technical Documentation & Showcase Content Manager
 
-Development agents handle implementation work across code and technical documentation.
+Nora maintains internal documentation patterns, drafts public showcase content, and routes public-facing updates through review-first pull requests.
 
-That includes work like:
+### Victor Chen — Finance & Cost Intelligence
 
-- building features
-- fixing defects
-- updating repositories
-- supporting review and CI workflows
+Victor tracks model usage, cost visibility, and the economics of running an AI-assisted engineering company.
 
 ## Shared principle
 
-Agents are most effective when they operate with a clear job to do, a visible handoff model, and a system of record that captures what happened.
+These roles are not decorative labels.
 
-That is the organizational logic behind ACME's agent model.
+They help ACME answer practical questions:
+
+- who owns this stage of work?
+- what system should be updated?
+- what kind of review is required?
+- what should become part of the public story?
+
+That clarity is one of the main reasons ACME can build in public without collapsing into improvisation.

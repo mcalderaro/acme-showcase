@@ -47,4 +47,10 @@
 - title: Operations
   url: /operations/
   key: operations
-  children: []
+  children:
+    - title: Governance and Approvals
+      url: /operations/governance-and-approvals/
+    - title: Review and Publication Flow
+      url: /operations/review-and-publication/
+    - title: Exhaustive Implementation Checklist
+      url: /operations/exhaustive-implementation-checklist/
