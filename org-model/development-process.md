@@ -5,52 +5,61 @@ section: org-model
 permalink: /org-model/development-process/
 ---
 
-ACME ClawWorks uses a ticket-first development process.
+ACME ClawWorks uses a ticket-driven development process.
 
-Implementation does not begin as freeform code generation. It begins as tracked work with a defined outcome.
+Implementation does not begin as freeform output. It begins as tracked work with a defined owner, a visible purpose, and a review path.
 
 ## Lifecycle
 
-The development flow is intentionally simple:
+In public-safe form, the development path looks like this:
 
-**Idea → Ticket → Planning → Implementation → Commit → Review → Deployment → Closure**
+**Direction → Ticket → Product / Architecture shaping → Implementation → Review → QA / validation → Merge or milestone outcome → Documentation**
 
-Each step exists so work can be understood by both humans and agents.
+Not every task touches every stage in exactly the same way, but meaningful work is expected to leave this kind of trail.
 
 ## Ticket-first execution
 
 Every meaningful change should begin with a ticket.
 
-That ticket establishes:
+That ticket captures:
 
 - what needs to happen
 - why it matters
-- who owns it
+- who owns the next stage
 - how completion will be judged
 
 This keeps ACME from turning requests into undocumented improvisation.
 
-## Planning before implementation
+## Handoffs before implementation
 
-Before code changes begin, the owner reviews scope, affected repositories, dependencies, and the likely implementation path.
+Before a repository changes, the work is expected to be shaped by the right specialist.
 
-That planning step is small on purpose. It helps preserve focus without adding bureaucracy.
+That may include:
+
+- product clarification
+- architecture constraints
+- dependency review
+- repository selection
+- validation expectations
+
+The goal is not bureaucracy for its own sake. The goal is to reduce ambiguity before execution starts.
 
 ## Branches, commits, and review
 
 Once implementation starts, work moves onto a focused branch and is recorded through descriptive commits.
 
-Changes are then reviewed through the usual mix of:
+Changes are then reviewed through the normal ACME path, which may include:
 
-- build validation
+- pull request review
 - automated checks
-- human review
-- agent-assisted review
+- specialist review
+- QA confirmation
+- CTO approval where required
 
 ## Completion standard
 
-Work is not done because code exists.
+Work is not done because code or copy exists.
 
 It is done when the requested change is implemented, reviewable, documented where needed, and reflected in the systems that track the company.
 
-That is the difference between generating output and running a development process.
+That standard is what separates generated output from actual delivery.

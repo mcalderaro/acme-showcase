@@ -7,84 +7,69 @@ permalink: /company/how-acme-works/
 
 ACME ClawWorks is a founder-led, AI-assisted engineering studio.
 
-The company is directed by Matt Calderaro and operated through a structured workflow that turns ideas into documented, reviewable work.
+The company is directed by Matt Calderaro and run through a structured workflow that turns natural-language direction into tracked, reviewable work.
 
 ## The short version
 
-At ACME, work does not jump straight from idea to code.
+At ACME, work does not jump straight from an idea to a finished artifact.
 
-Direction starts with the CTO. From there, work is coordinated, shaped, implemented, tested, validated, and documented before it becomes part of the public company story.
+Direction begins with the CTO. From there, the work is coordinated, translated into tracked tasks, shaped by the right specialists, validated, and documented before it becomes part of the public company record.
 
-That structure is the point.
+That structure is not overhead. It is the thing that makes the company legible.
 
-We are interested in showing what happens when AI is used as part of a real operating model instead of as a one-off productivity trick.
+## How work moves now
 
-## How work moves
+In public-safe shorthand, ACME works like this:
 
-ACME uses a staged workflow:
+**Matt direction → coordination and ticketing → product/architecture/engineering/QA handoffs → review → milestone or documented outcome → public showcase draft → approval → publication**
 
-**Idea → Product Brief → Architecture → Engineering → QA → CTO Validation → Milestone → Documentation**
+The exact path varies by task, but the pattern stays the same:
 
-Each stage has a purpose.
-
-- **Idea** gives the company direction.
-- **Product Brief** defines what is being built and why.
-- **Architecture** sets the technical shape and constraints.
-- **Engineering** implements the work.
-- **QA** checks that it behaves as expected.
-- **CTO Validation** provides human review before a milestone is treated as complete.
-- **Milestone** marks a meaningful unit of progress.
-- **Documentation** turns that progress into something reusable internally and understandable publicly.
-
-This keeps the company legible. It also makes the public showcase more than a collection of polished screenshots.
+- work starts with human direction
+- work becomes visible in systems of record
+- specialists handle the stages they own
+- review gates stay explicit
+- public storytelling happens after the underlying work is real enough to explain
 
 ## Who does what
 
-ACME runs with clear role boundaries.
+ACME uses named roles with visible ownership.
 
-Matt Calderaro sets direction as CTO.
+- **Matt Calderaro** sets direction and remains final human authority
+- **Alex Mercer** handles operational coordination and keeps work flowing
+- **Emma Carter** shapes product intent
+- **Adrian Cole** defines architecture and technical guardrails
+- **Ethan Brooks** implements approved work
+- **Don White** validates behavior and quality
+- **Nora Hale** handles documentation and public showcase publication
+- **Victor Chen** tracks cost and model economics
 
-Alex Mercer, the Program Director, handles operational coordination: intake, task flow, prioritization, and milestone movement.
+That separation matters. It lets the company move quickly without making ownership fuzzy.
 
-Specialists then work within their domains:
+## How instructions become tracked work
 
-- product definition
-- architecture decisions
-- engineering execution
-- QA automation
-- documentation and showcase publication
-- finance and cost analysis
+ACME is designed so the CTO can speak naturally while the system stays structured underneath.
 
-That separation matters. It allows work to move quickly without turning into chaos.
+A conversational request can become a ticket, a report, a milestone candidate, a review task, or a publication draft depending on what is needed. The point is not to force everything into one template. The point is to make the work traceable once it matters.
 
-## How instructions become work
+## Why governance matters
 
-ACME is designed so the CTO can direct the company in natural language.
+AI-assisted teams can move very fast. Speed is only useful if the results stay understandable.
 
-Those instructions are translated into structured operational work through a shared workflow. Internally, that means requests can be tracked as tasks, reports, status checks, milestones, or escalations depending on what is needed.
+ACME uses governance so that:
 
-The result is a company that can feel conversational from the outside while still remaining organized underneath.
+- new work does not appear without authority
+- major decisions have a visible owner
+- milestones remain reviewable
+- public publishing is approval-gated
+- documentation reflects the current operating model instead of stale assumptions
 
-## Why this structure exists
-
-AI-assisted teams can move fast, but speed alone is not very interesting.
-
-What matters is whether the work stays understandable, reviewable, and governed.
-
-ACME uses process so that:
-
-- work does not disappear into improvisation
-- responsibilities stay clear
-- major changes are visible
-- milestones can be reviewed by a human
-- public storytelling stays connected to real company activity
-
-In other words: the workflow is what makes the transparency credible.
+That is what makes the transparency credible.
 
 ## What the public gets to see
 
-The ACME showcase is the public layer of that system.
+The ACME Showcase is the public layer of that system.
 
-When milestones, dev logs, team pages, or company explainers appear on the site, they are meant to reflect actual work that moved through the company. The goal is not to create the illusion of progress. The goal is to document progress as it happens.
+When company explainers, milestones, stories, and dev logs appear here, they are meant to describe real work and real operating structure. The site is not trying to create the illusion of progress. It is trying to document progress in a way that stays readable from the outside.
 
-That is how ACME works: direction from a human, execution through an AI-assisted team, and a steady trail of visible decisions, milestones, and documentation.
+That is how ACME works: human direction, structured specialist execution, visible review, and a public record that tries to keep up with reality.
