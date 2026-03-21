@@ -21,11 +21,14 @@
           <p>ACME documents how work moves from direction to architecture, engineering, QA, milestones, and public storytelling.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="{{ '/company/' | relative_url }}">Explore Company</a>
-            <a class="button" href="{{ '/company/how-acme-works/' | relative_url }}">How ACME Works</a>
+            <a class="button button-secondary" href="{{ '/company/how-acme-works/' | relative_url }}">How ACME Works</a>
           </div>
         </div>
         <div class="hero-panel">
-          <img class="hero-logo" src="{{ '/assets/img/acme-logo.svg' | relative_url }}" alt="ACME ClawWorks logo">
+          <div class="hero-logo-stack">
+            <img class="hero-logo" src="{{ '/assets/img/acme-logo-provided.png' | relative_url }}" alt="ACME ClawWorks logo">
+            <p class="hero-logo-note">A public handbook for how direction becomes architecture, implementation, review, and visible progress at ACME.</p>
+          </div>
           <div class="hero-card-grid">
             <div class="hero-card">
               <strong>Founder-led</strong>
