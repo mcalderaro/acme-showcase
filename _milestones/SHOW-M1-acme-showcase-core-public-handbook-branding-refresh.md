@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "SHOW-M1 — ACME Showcase Core Public Handbook / Branding Refresh"
 milestone_id: "SHOW-M1"
 product: "ACME Showcase"
