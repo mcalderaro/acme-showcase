@@ -57,7 +57,7 @@ a:hover { color: var(--link-hover); }
 }
 
 .brandmark img {
-  width: clamp(112px, 15vw, 146px);
+  width: 75px;
   height: auto;
   flex: 0 0 auto;
   filter: drop-shadow(0 12px 24px rgba(15, 41, 64, 0.12));
@@ -401,9 +401,6 @@ a:hover { color: var(--link-hover); }
 
 @media (max-width: 640px) {
   .shell { padding: 16px; }
-  .brandmark img {
-    width: 122px;
-  }
   .prose,
   .hero-copy,
   .hero-panel,
