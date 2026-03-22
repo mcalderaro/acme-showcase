@@ -3,6 +3,7 @@ title: "SHOW-M1 — ACME Showcase Core Public Handbook / Branding Refresh"
 milestone_id: "SHOW-M1"
 product: "ACME Showcase"
 milestone_type: "product"
+permalink: /milestones/SHOW-M1-acme-showcase-core-public-handbook-branding-refresh/
 published_on: 2026-03-22
 showcase_candidate: true
 ---
