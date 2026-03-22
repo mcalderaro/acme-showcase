@@ -46,6 +46,12 @@
   children:
     - title: Showcase Core Public Handbook / Branding Refresh Milestone
       url: /milestones/SHOW-M1-acme-showcase-core-public-handbook-branding-refresh/
+- title: Stories
+  url: /stories/
+  key: stories
+  children:
+    - title: Milestone Publication Trigger Validation
+      url: /stories/milestone-publication-trigger-validation-1773950596233/
 - title: Operations
   url: /operations/
   key: operations

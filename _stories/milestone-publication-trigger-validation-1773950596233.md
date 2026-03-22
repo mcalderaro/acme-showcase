@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Milestone Publication Trigger Validation"
 product: "ACME ClawWorks"
 summary: >-
