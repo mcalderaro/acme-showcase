@@ -43,7 +43,9 @@
 - title: Products
   url: /products/
   key: products
-  children: []
+  children:
+    - title: Showcase Core Public Handbook / Branding Refresh Milestone
+      url: /milestones/SHOW-M1-acme-showcase-core-public-handbook-branding-refresh/
 - title: Operations
   url: /operations/
   key: operations
