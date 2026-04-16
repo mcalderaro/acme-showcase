@@ -44,6 +44,12 @@
   url: /products/
   key: products
   children:
+    - title: ACME Showcase
+      url: /products/acme-showcase/
+    - title: ACME Showcase Technical Profile
+      url: /products/acme-showcase/technical-profile/
+    - title: ACME Showcase Architecture & Deployment Baseline
+      url: /products/acme-showcase/architecture-baseline/
     - title: Showcase Core Public Handbook / Branding Refresh Milestone
       url: /milestones/SHOW-M1-acme-showcase-core-public-handbook-branding-refresh/
 - title: Stories
