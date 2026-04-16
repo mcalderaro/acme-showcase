@@ -11,8 +11,9 @@ ACME is not a single app with a decorative company story wrapped around it. It i
 
 <ul class="section-list">
   <li>
-    <strong>ACME Showcase</strong>
+    <strong><a href="{{ '/products/acme-showcase/' | relative_url }}">ACME Showcase</a></strong>
     <p>The public documentary site that explains how ACME works and publishes milestones, stories, and company explainers.</p>
+    <p>Canonical product docs: <a href="{{ '/products/acme-showcase/technical-profile/' | relative_url }}">Technical Profile</a> and <a href="{{ '/products/acme-showcase/architecture-baseline/' | relative_url }}">Architecture &amp; Deployment Baseline</a>.</p>
   </li>
   <li>
     <strong>ACME Platform</strong>
